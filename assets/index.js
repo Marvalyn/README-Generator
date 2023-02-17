@@ -1,9 +1,10 @@
+// required files to enable app to run
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// array of questions for user
+// array of questions for user, including validaion functions to ensure information is entered 
 inquirer
     .prompt([
         {
@@ -65,7 +66,7 @@ inquirer
                 } else {
                     console.log('Please select an option')
                     return false;
-                    }
+                }
             }
         }, {
             type: "input",
@@ -103,7 +104,7 @@ inquirer
                     return false;
                 }
             }
-        },{
+        }, {
             type: "input",
             message: "What is your email address?",
             name: "email",
@@ -116,11 +117,11 @@ inquirer
                 }
             }
         },
-        
+
     ])
     //functiion to capture inputted data and create an md file 
     .then((data) => {
         fs.writeFile("SampleREADME.md", generateMarkdown(data), (err) => {
-          err ? console.log(err) : console.log('Success!')
+            err ? console.log(err) : console.log('Success!')
         })
     });

@@ -62,6 +62,7 @@ function renderLicenseBadge(license) {
   return badge;
 }
 
+//function to generate link to webpage with more info on licenses
 function renderLicenseLink(license) {
   let licenseLink = '';
     if(license === 'MIT') {
