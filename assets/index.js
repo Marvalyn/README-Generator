@@ -48,9 +48,7 @@ inquirer
     ])
     //functiion to capture inputted data and create an md file 
     .then((data) => {
-        const filename = `${data.title.toLowerCase().split(' ').join('')}.md`;
-    
-        fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
+        fs.writeFile("README.md", generateMarkdown(data), (err) => {
           err ? console.log(err) : console.log('Success!')
-        );
-      });
+        })
+    });
