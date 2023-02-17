@@ -16,10 +16,6 @@ inquirer
             name: "description"
         }, {
             type: "input",
-            message: "Please complete a Table of Contents.",
-            name: "table of contents"
-        }, {
-            type: "input",
             message: "What dependencies (if any) does the user need to install to run this app?",
             name: "installation"
         }, {
@@ -34,17 +30,23 @@ inquirer
         }, {
             type: "input",
             message: "Please name any other users that contributed to this project",
-            name: "contributing"
+            name: "contributors"
         }, {
             type: "input",
             message: "What commands are needed to test this app?",
             name: "tests"
         }, {
             type: "input",
-            message: "Please enter your contact info for inquiries.",
-            name: "questions"
+            message: "What is your GitHub username?",
+            name: "username"
+        },{
+            type: "input",
+            message: "What is your email address?",
+            name: "email"
         },
+        
     ])
+    //functiion to capture inputted data and create an md file 
     .then((data) => {
         const filename = `${data.title.toLowerCase().split(' ').join('')}.md`;
     
@@ -52,29 +54,3 @@ inquirer
           err ? console.log(err) : console.log('Success!')
         );
       });
-    
-// function to write README file
-// function writeToFile(fileName, data) {
-//     fs.writeFile(fileName, data, function(err) {
-//         console.log(fileName)
-//         console.log(data)
-//         if (err) {
-//             return console.log(err)
-//         } else {
-//             console.log("success")
-//         }
-//     })
-// }
-
-// function to initialize program
-// function init() {
-//     inquirer.prompt(questions)
-//     // .then(function(data) {
-//     //     // writeToFile("README.md", generatorMarkdown(data));
-//     //     // console.log(data)
-
-//     // })
-// }
-
-// // function call to initialize program
-// init();
