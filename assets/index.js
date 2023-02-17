@@ -120,7 +120,7 @@ inquirer
     ])
     //functiion to capture inputted data and create an md file 
     .then((data) => {
-        fs.writeFile("README.md", generateMarkdown(data), (err) => {
+        fs.writeFile("SampleREADME.md", generateMarkdown(data), (err) => {
           err ? console.log(err) : console.log('Success!')
         })
     });
