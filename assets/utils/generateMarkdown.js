@@ -28,7 +28,7 @@ function generateMarkdown(data) {
   In order to use this app run the command: ${data.usage}
 
   # License
-  This project is licensed under the ${data.license} license. 
+  This project is licensed under the ${data.license} license. More information on this license can be found here: ${renderLicenseLink(data.license)}
 
   # Contributing
   Contributors: ${data.contributors}
@@ -60,4 +60,22 @@ function renderLicenseBadge(license) {
     badge = ""
   }
   return badge;
+}
+
+function renderLicenseLink(license) {
+  let licenseLink = '';
+    if(license === 'MIT') {
+      licenseLink = 'https://choosealicense.com/licenses/mit/'
+    } else if (license === 'Apache 2.0') {
+      licenseLink = 'http://www.apache.org/licenses/LICENSE-2.0'
+    } else if (license === "General Public License") {
+      licenseLink = 'https://www.gnu.org/licenses'
+    } else if (license === "Boost Software 1.0") {
+      licenseLink = "https://www.boost.org/LICENSE_1_0.txt"
+    } else if (license === "Eclipse Public 1.0") {
+     licenseLink = "https://www.eclipse.org/legal/epl-v10.html"
+    } else {
+      licenseLink = ""
+    }
+    return licenseLink;
 }

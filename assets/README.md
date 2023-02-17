@@ -1,9 +1,9 @@
-# readme generator
+# gen gen
 
-  ![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)
+  ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
   # Description
-  to generate read me files
+  gen gen read me
 
   # Table of Contents 
 
@@ -20,19 +20,19 @@
   * [Questions](#questions)
 
   # Installation
-  The following necessary dependencies must be installed to run the application properly: fjfj
+  The following necessary dependencies must be installed to run the application properly: dfgao
 
   # Usage
-  In order to use this app run the command: ggbsgb
+  In order to use this app run the command: fffhsj
 
   # License
-  This project is licensed under the Boost Software 1.0 license. 
+  This project is licensed under the General Public License license. More information on this license can be found here: https://www.gnu.org/licenses
 
   # Contributing
-  Contributors: agijgsg
+  Contributors: no one no one no oneeeeeee
 
   # Tests
-  The following command is needed to run the test: hhdfg
+  The following command is needed to run the test: npm test
 
   # Questions
-  If you have any questions please visit egrstg or send an email to: sfgsfg.
+  If you have any questions please visit fkhfkafkadf or send an email to: kjekjfkf.
