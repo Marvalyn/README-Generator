@@ -69,7 +69,7 @@ inquirer
             }
         }, {
             type: "input",
-            message: "Please name any other users that contributed to this project",
+            message: "Please name any other users that contributed to this project, or enter contribution guidelines",
             name: "contributors",
             validate: contributionsInput => {
                 if (contributionsInput) {
