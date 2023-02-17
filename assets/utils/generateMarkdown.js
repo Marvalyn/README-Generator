@@ -2,7 +2,7 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+  ${renderLicenseBadge(data.license)}
 
   # Description
   ${data.description}
@@ -30,7 +30,7 @@ function generateMarkdown(data) {
   # License
   This project is licensed under the ${data.license} license. 
 
-  # Contributors
+  # Contributing
   Contributors: ${data.contributors}
 
   # Tests
@@ -42,3 +42,22 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown;
+
+//function to generate license badges
+function renderLicenseBadge(license) {
+  let badge = '';
+  if(license === 'MIT') {
+      badge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
+  } else if (license === 'Apache 2.0') {
+      badge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'
+  } else if (license === "General Public License") {
+      badge = '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)'
+  } else if (license === "Boost Software 1.0") {
+    badge = "![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)"
+  } else if (license === "Eclipse Public 1.0") {
+    badge = "![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)"
+  } else {
+    badge = ""
+  }
+  return badge;
+}

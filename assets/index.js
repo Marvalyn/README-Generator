@@ -58,7 +58,7 @@ inquirer
             type: "list",
             message: "What liscence is being used?",
             name: "license",
-            choices: ["Apache 2.0", "MIT", "Eclipse Public 2.0", "Boost Software 1.0", "General Public License"],
+            choices: ["Apache 2.0", "MIT", "Eclipse Public 1.0", "Boost Software 1.0", "General Public License"],
             validate: licenseInput = () => {
                 if (licenseInput) {
                     return true;
