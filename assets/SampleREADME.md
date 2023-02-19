@@ -1,9 +1,9 @@
 # README Generator
 
-  ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+  ![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)
 
   # Description
-  this project generates readme files using node.js
+  This project generates README.md files based on user input.
 
   # Table of Contents 
 
@@ -23,16 +23,16 @@
   The following necessary dependencies must be installed to run the application properly: npm install
 
   # Usage
-  In order to use this app run the command: run it in node, asnwer the questions, a readme file is generated, Bob's your uncle.
+  In order to use this app run the command: Run the command node index.js and follow the input prompts
 
   # License
-  This project is licensed under the Apache 2.0 license. More information on this license can be found here: http://www.apache.org/licenses/LICENSE-2.0
+  This project is licensed under the Eclipse Public 1.0 license. More information on this license can be found here: https://www.eclipse.org/legal/epl-v10.html
 
   # Contributing
-  Contributors: There were no other contributors.
+  Contributors: There were no other contributors
 
   # Tests
   The following command is needed to run the test: npm test
 
   # Questions
-  If you have any questions please visit https://github.com/Marvalyn or send an email to: marvalynomoyinmi49@gmail.com.
+  If you have any questions please visit https://github.com/marvalyn or send an email to: marvalynomoyinmi49@gmail.com.

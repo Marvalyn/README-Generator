@@ -20,5 +20,7 @@ The application will be invoked by using the following command: node index.js
 
 The user will then follow the input prompts and once completed a README.md file will be generated using the input content.
 
+A live demo of this app can be seen at: https://drive.google.com/file/d/1TX4hW5Sb3UjppbF0Ec3HFqTTEXqlPzRw/view 
+
 ## License
 This project is currently unlicensed.
