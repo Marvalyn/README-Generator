@@ -1,6 +1,6 @@
 # README Generator
 
-  ![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)
+  ![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)
 
   # Description
   This project generates README.md files based on user input.
@@ -26,13 +26,13 @@
   In order to use this app run the command: Run the command node index.js and follow the input prompts
 
   # License
-  This project is licensed under the Eclipse Public 1.0 license. More information on this license can be found here: https://www.eclipse.org/legal/epl-v10.html
+  This project is licensed under the Boost Software 1.0 license. More information on this license can be found here: https://www.boost.org/LICENSE_1_0.txt
 
-  # Contributing
+  # Contributors
   Contributors: There were no other contributors
 
   # Tests
-  The following command is needed to run the test: npm test
+  The following command is needed to run the test: npm run test
 
   # Questions
-  If you have any questions please visit https://github.com/marvalyn or send an email to: marvalynomoyinmi49@gmail.com.
+  If you have any questions please visit https://github.com/Marvalyn or send an email to: marvalynomoyinmi49@gmail.com.
