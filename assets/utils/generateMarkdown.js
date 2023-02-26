@@ -30,7 +30,7 @@ function generateMarkdown(data) {
   # License
   This project is licensed under the ${data.license} license. More information on this license can be found here: ${renderLicenseLink(data.license)}
 
-  # Contributing
+  # Contributors
   Contributors: ${data.contributors}
 
   # Tests
